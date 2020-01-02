@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "C:\\Users\\junic\\RiderProjects\\ConsoleApp4\\ConsoleApp4\\ConsoleApp4.csproj",
+    "projectUniqueName": "C:\\Users\\junic\\RiderProjects\\amz\\ConsoleApp4\\ConsoleApp4.csproj",
     "projectName": "ConsoleApp4",
-    "projectPath": "C:\\Users\\junic\\RiderProjects\\ConsoleApp4\\ConsoleApp4\\ConsoleApp4.csproj",
-    "outputPath": "C:\\Users\\junic\\RiderProjects\\ConsoleApp4\\ConsoleApp4\\obj\\",
+    "projectPath": "C:\\Users\\junic\\RiderProjects\\amz\\ConsoleApp4\\ConsoleApp4.csproj",
+    "outputPath": "C:\\Users\\junic\\RiderProjects\\amz\\ConsoleApp4\\obj\\",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
       "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -3,14 +3,13 @@
   <component name="ContentModelStore">
     <e p="C:\Users\junic\.Rider2019.3\config\consoles\db" t="IncludeRecursive" />
     <e p="C:\Users\junic\.Rider2019.3\config\extensions" t="IncludeRecursive" />
-    <e p="C:\Users\junic\.Rider2019.3\config\scratches" t="IncludeRecursive" />
     <e p="C:\Users\junic\.Rider2019.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\junic\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_ConsoleApp4.-606012810.00" t="ExcludeRecursive" />
-    <e p="C:\Users\junic\RiderProjects\amz" t="IncludeFlat">
-      <e p=".git\info\exclude" t="IncludeRecursive" />
+    <e p="C:\Users\junic\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_ConsoleApp4.-1488006734.00" t="ExcludeRecursive" />
+    <e p="C:\Users\junic\RiderProjects\ConsoleApp4" t="IncludeFlat">
       <e p="ConsoleApp4" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
         <e p="ConsoleApp4.csproj" t="IncludeRecursive" />
+        <e p="MapSum.cs" t="Include" />
         <e p="MovingAverage.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -23,6 +22,7 @@
         <e p="sdf.cs" t="Include" />
         <e p="Solution.cs" t="Include" />
         <e p="Solution2.cs" t="Include" />
+        <e p="Solution2minimumHours.cs" t="Include" />
         <e p="SolutionareIdentical.cs" t="Include" />
         <e p="SolutionCutOffTree.cs" t="Include" />
         <e p="SolutionDietPlanPerformance.cs" t="Include" />
@@ -39,10 +39,13 @@
         <e p="SolutionPartitionLabels.cs" t="Include" />
         <e p="SolutionRelativeSortArray.cs" t="Include" />
         <e p="SolutionRemoveNthFromEnd.cs" t="Include" />
+        <e p="SolutionReplaceWords.cs" t="Include" />
         <e p="SolutionSearchMatrix.cs" t="Include" />
         <e p="SolutionSolve.cs" t="Include" />
+        <e p="SolutionthreeKeywordSuggestions.cs" t="Include" />
         <e p="SolutionTwoSum.cs" t="Include" />
         <e p="SolutionZigzagLevelOrder.cs" t="Include" />
+        <e p="Trie.cs" t="Include" />
       </e>
       <e p="ConsoleApp4.sln" t="IncludeFlat" />
       <e p="packages" t="ExcludeRecursive" />

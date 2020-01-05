@@ -12,11 +12,9 @@ namespace ConsoleApp4
 {
     class Program
     {
-       
         static void Main(string[] args)
         {
-            
-
+           
 
             /*var res = new Solution().ReplaceWords(new List<string>{"cat", "bat", "rat"}, "the cattle was rattled by the battery");
             Console.WriteLine(res);*/

@@ -47,6 +47,7 @@
         <e p="SolutionTwoSum.cs" t="Include" />
         <e p="SolutionZigzagLevelOrder.cs" t="Include" />
         <e p="Trie.cs" t="Include" />
+        <e p="WordDictionary.cs" t="Include" />
       </e>
       <e p="ConsoleApp4.sln" t="IncludeFlat" />
       <e p="packages" t="ExcludeRecursive" />

@@ -28,6 +28,7 @@
         <e p="SolutionCutOffTree.cs" t="Include" />
         <e p="SolutionDietPlanPerformance.cs" t="Include" />
         <e p="SolutionDomino.cs" t="Include" />
+        <e p="SolutionFindWords.cs" t="Include" />
         <e p="SolutionGcdOfStrings.cs" t="Include" />
         <e p="SolutionGenerateMatrix.cs" t="Include" />
         <e p="SolutionIsValid.cs" t="Include" />
@@ -45,6 +46,7 @@
         <e p="SolutionSolve.cs" t="Include" />
         <e p="SolutionthreeKeywordSuggestions.cs" t="Include" />
         <e p="SolutionTwoSum.cs" t="Include" />
+        <e p="SolutionWordSquares.cs" t="Include" />
         <e p="SolutionZigzagLevelOrder.cs" t="Include" />
         <e p="Trie.cs" t="Include" />
         <e p="WordDictionary.cs" t="Include" />

@@ -1,9 +1,8 @@
 ﻿// ReSharper disable UseIndexFromEndExpression
 
-using System;
 using System.Collections;
-using System.Linq;
 using System.Numerics;
+using System.Runtime.CompilerServices;
 using System.Xml;
 using ConsoleApp5;
 using Microsoft.VisualBasic;
@@ -12,6 +11,9 @@ namespace ConsoleApp4
 {
     class Program
     {
+       
+
+
         static void Main(string[] args)
         {
            

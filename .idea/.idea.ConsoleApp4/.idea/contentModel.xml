@@ -25,6 +25,7 @@
         <e p="Solution2.cs" t="Include" />
         <e p="Solution2minimumHours.cs" t="Include" />
         <e p="SolutionareIdentical.cs" t="Include" />
+        <e p="SolutionBinarySearch.cs" t="Include" />
         <e p="SolutionCutOffTree.cs" t="Include" />
         <e p="SolutionDietPlanPerformance.cs" t="Include" />
         <e p="SolutionDomino.cs" t="Include" />
@@ -43,7 +44,9 @@
         <e p="SolutionRemoveNthFromEnd.cs" t="Include" />
         <e p="SolutionReplaceWords.cs" t="Include" />
         <e p="SolutionSearchMatrix.cs" t="Include" />
+        <e p="SolutionSearchTotatingArray.cs" t="Include" />
         <e p="SolutionSolve.cs" t="Include" />
+        <e p="SolutionSqrt.cs" t="Include" />
         <e p="SolutionthreeKeywordSuggestions.cs" t="Include" />
         <e p="SolutionTwoSum.cs" t="Include" />
         <e p="SolutionWordSquares.cs" t="Include" />

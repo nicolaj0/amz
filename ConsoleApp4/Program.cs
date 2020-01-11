@@ -1,6 +1,8 @@
 ﻿// ReSharper disable UseIndexFromEndExpression
 
+using System;
 using System.Collections;
+using System.Linq;
 using System.Numerics;
 using System.Runtime.CompilerServices;
 using System.Xml;
@@ -11,13 +13,15 @@ namespace ConsoleApp4
 {
     class Program
     {
-       
-
-
         static void Main(string[] args)
         {
-           
-
+            
+            /*var res = new SolutionSearchTotatingArray().Search(new []{4,5,6,7,0,1,2},0);
+           Console.WriteLine(res);*/
+            /*var res= new SolutionSqrt().MySqrt(2147395599);
+            Console.WriteLine(res);*/
+            /*var res = new SolutionBinarySearch().Search(new []{-1,0,3,5,9,12},9);
+            Console.WriteLine(res);*/
             /*var res = new Solution().ReplaceWords(new List<string>{"cat", "bat", "rat"}, "the cattle was rattled by the battery");
             Console.WriteLine(res);*/
             /*var ms = new MapSum();

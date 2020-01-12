@@ -2,20 +2,80 @@
 
 using System;
 using System.Collections;
-using System.Linq;
+using System.Collections.Generic;
 using System.Numerics;
 using System.Runtime.CompilerServices;
 using System.Xml;
 using ConsoleApp5;
 using Microsoft.VisualBasic;
+using Microsoft.VisualBasic.CompilerServices;
 
 namespace ConsoleApp4
 {
+    public class Solution
+    {
+        public String LongestPalindrome(String s)
+        {
+            if (s == null || s.Length < 1) return "";
+            int start = 0, end = 0;
+            for (int i = 0; i < s.Length; i++)
+            {
+                int len1 = expandAroundCenter(s, i, i);
+                int len2 = expandAroundCenter(s, i, i + 1);
+                int len = Math.Max(len1, len2);
+                if (len > end - start)
+                {
+                    start = i - (len - 1) / 2;
+                    end = i + len / 2;
+                }
+            }
+
+            return s.Substring(start, end + 1);
+        }
+
+        private int expandAroundCenter(String s, int left, int right)
+        {
+            int L = left, R = right;
+            while (L >= 0 && R < s.Length && s[L] == s[R])
+            {
+                L--;
+                R++;
+            }
+
+            return R - L - 1;
+        }
+    }
+
+
+    /*public class Solution
+    {
+        public int[][] KClosest(int[][] points, int K)
+        {
+            var dict = new Dictionary<(int, int), double>();
+
+
+            foreach (var point in points)
+            {
+                var dist = Math.Sqrt(point[0] * point[0] + point[1] * point[1]);
+                dict[(point[0], point[1])] = dist;
+            }
+
+            return dict.OrderBy(t => t.Value).Take(K).Select(g => g.Key).Select(r => new int[] {r.Item1, r.Item2})
+                .ToArray();
+        }
+    }*/
+
     class Program
     {
+       
+
+      
+
         static void Main(string[] args)
         {
-            
+           
+            /*var res = new Solution().KClosest(new []{new []{1,3}, new []{-2,-2}},1);
+            Console.WriteLine(res);*/
             /*var res = new SolutionSearchTotatingArray().Search(new []{4,5,6,7,0,1,2},0);
            Console.WriteLine(res);*/
             /*var res= new SolutionSqrt().MySqrt(2147395599);

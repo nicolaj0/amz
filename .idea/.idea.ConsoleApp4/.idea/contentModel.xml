@@ -32,6 +32,7 @@
         <e p="SolutionFindWords.cs" t="Include" />
         <e p="SolutionGcdOfStrings.cs" t="Include" />
         <e p="SolutionGenerateMatrix.cs" t="Include" />
+        <e p="SolutionHotelRoom.cs" t="Include" />
         <e p="SolutionIsValid.cs" t="Include" />
         <e p="SolutionIsValidSudoku.cs" t="Include" />
         <e p="SolutionLongestPalindrome.cs" t="Include" />
@@ -45,6 +46,7 @@
         <e p="SolutionReplaceWords.cs" t="Include" />
         <e p="SolutionSearchMatrix.cs" t="Include" />
         <e p="SolutionSearchTotatingArray.cs" t="Include" />
+        <e p="SolutionShortestPathwithAlternatingColors.cs" t="Include" />
         <e p="SolutionSolve.cs" t="Include" />
         <e p="SolutionSqrt.cs" t="Include" />
         <e p="SolutionthreeKeywordSuggestions.cs" t="Include" />

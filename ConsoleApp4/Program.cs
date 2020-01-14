@@ -3,6 +3,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using System.Numerics;
 using System.Runtime.CompilerServices;
 using System.Xml;
@@ -12,72 +13,69 @@ using Microsoft.VisualBasic.CompilerServices;
 
 namespace ConsoleApp4
 {
-    public class Solution
+    
+
+    public class TreeNode
     {
-        public String LongestPalindrome(String s)
+        public int val;
+        public TreeNode left;
+        public TreeNode right;
+
+        public TreeNode(int x)
         {
-            if (s == null || s.Length < 1) return "";
-            int start = 0, end = 0;
-            for (int i = 0; i < s.Length; i++)
-            {
-                int len1 = expandAroundCenter(s, i, i);
-                int len2 = expandAroundCenter(s, i, i + 1);
-                int len = Math.Max(len1, len2);
-                if (len > end - start)
-                {
-                    start = i - (len - 1) / 2;
-                    end = i + len / 2;
-                }
-            }
-
-            return s.Substring(start, end + 1);
-        }
-
-        private int expandAroundCenter(String s, int left, int right)
-        {
-            int L = left, R = right;
-            while (L >= 0 && R < s.Length && s[L] == s[R])
-            {
-                L--;
-                R++;
-            }
-
-            return R - L - 1;
+            val = x;
         }
     }
 
 
-    /*public class Solution
+    public class ListNode
     {
-        public int[][] KClosest(int[][] points, int K)
+        public int val;
+        public ListNode next;
+
+        public ListNode(int x)
         {
-            var dict = new Dictionary<(int, int), double>();
-
-
-            foreach (var point in points)
-            {
-                var dist = Math.Sqrt(point[0] * point[0] + point[1] * point[1]);
-                dict[(point[0], point[1])] = dist;
-            }
-
-            return dict.OrderBy(t => t.Value).Take(K).Select(g => g.Key).Select(r => new int[] {r.Item1, r.Item2})
-                .ToArray();
+            val = x;
         }
-    }*/
+
+        public override string ToString()
+        {
+            return $"{nameof(val)}: {val}";
+        }
+    }
+
 
     class Program
     {
-       
-
-      
-
         static void Main(string[] args)
         {
-           
+            /*var res = new Solution().ReverseList(new ListNode(1) {next = new ListNode(1) {next = new ListNode(3)}});*/
+
+            // var res = new SolutionFirstUniqChar().FirstUniqChar("cc");
+            var TreeNode = new TreeNode(1)
+            {
+                left = new TreeNode(2)
+                {
+                    left = new TreeNode(4),
+                    right = new TreeNode(5)
+                },
+                right = new TreeNode(3)
+                {
+                    left = new TreeNode(6),
+                    right = new TreeNode(7)
+                },
+            };
+
+            // var res = new Solution().LevelOrder(TreeNode);
+
+            // var res = new SolutionConnectDfs().Connect(node);*/
+            //Console.WriteLine(res);
+
             /*var res = new Solution().KClosest(new []{new []{1,3}, new []{-2,-2}},1);
             Console.WriteLine(res);*/
-            /*var res = new SolutionSearchTotatingArray().Search(new []{4,5,6,7,0,1,2},0);
-           Console.WriteLine(res);*/
+            //var res = new SolutionSearchTotatingArray().Search(new []{4,5,6,7,8,0,1,2},3);
+            // var res = new SolutionSearchTotatingArray().Search(new int[]{5,1,3,},1);
+           // Console.WriteLine(res);
             /*var res= new SolutionSqrt().MySqrt(2147395599);
             Console.WriteLine(res);*/
             /*var res = new SolutionBinarySearch().Search(new []{-1,0,3,5,9,12},9);

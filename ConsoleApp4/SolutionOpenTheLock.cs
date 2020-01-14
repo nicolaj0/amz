@@ -7,127 +7,54 @@ namespace ConsoleApp4
     /* var res = new Solution().OpenLock(new[] {"0201", "0101", "0102", "1212", "2002"}, "0202");
             Console.WriteLine(res);*/
     
-    public class SolutionOpenTheLock
+    class SolutionOpentheLock
     {
-        public int distance(int a, int b)
+        public int OpenLock(String[] deadends, String target)
         {
-            var min = Math.Min(a, b);
-            var max = Math.Max(a, b);
-            return Math.Min(Math.Abs(max - min), Math.Abs(min - max + 10));
-        }
+            var dead = new HashSet<string>();
+            foreach (var d in deadends) dead.Add(d);
 
-        public int OpenLock(string[] deadends, string target)
-        {
-            int compute(int[] s, int[] h, int i)
-            {
-                var compute1 = s[i] + h[i];
-                return compute1 > 9 ? 0 : compute1 < 0 ? 9 : compute1;
-            }
+            var queue = new Queue<string>();
+            queue.Enqueue("0000");
+            //  queue.Enqueue(null);
 
-            var lockState = new[] {0, 0, 0, 0};
-            var targeState = TargeState(target);
+            var seen = new HashSet<string> {"0000"};
 
-            var deadEndStates = deadends.Select(TargeState).ToArray();
-
-            var queue = new Queue<int[]>();
-            var marked = new Dictionary<string, bool>();
-            marked["0000"] = true;
-
-            var disnatces = new int[]
-            {
-                distance(targeState[0], 0),
-                distance(targeState[1], 0),
-                distance(targeState[2], 0),
-                distance(targeState[3], 0),
-            };
-
-            var distanceInit = 0;
-
-            queue.Enqueue(lockState);
-
-            var helpers = new[]
-            {
-                new[] {1, 0, 0, 0},
-                new[] {-1, 0, 0, 0},
-                new[] {0, 1, 0, 0},
-                new[] {0, -1, 0, 0},
-                new[] {0, 0, 1, 0},
-                new[] {0, 0, -1, 0},
-                new[] {0, 0, 0, 1},
-                new[] {0, 0, 0, -1},
-            };
+            var depth = 0;
             while (queue.Count > 0)
             {
-                var s = queue.Dequeue();
-                print(s);
 
-
-                distanceInit += 1;
-
-                foreach (var h in helpers)
+                Console.WriteLine(queue.Count);
+                var node = queue.Dequeue();
+                if (node == null)
                 {
-                    var ns = new[]
+                    depth++;
+                    if (queue.Peek() != null)
+                        queue.Enqueue(null);
+                }
+                else if (node.Equals(target))
+                {
+                    return depth;
+                }
+                else if (!dead.Contains(node))
+                {
+                    for (var i = 0; i < 4; ++i)
                     {
-                        compute(s, h, 0),
-                        compute(s, h, 1),
-                        compute(s, h, 2),
-                        compute(s, h, 3),
-                    };
-
-                    var newDistance = new int[]
-                    {
-                        distance(targeState[0], ns[0]),
-                        distance(targeState[1], ns[1]),
-                        distance(targeState[2], ns[2]),
-                        distance(targeState[3], ns[3]),
-                    };
-
-
-                    var b = deadEndStates.Contains(ns);
-                    var join = string.Join("", ns);
-                    var visited = marked.ContainsKey(join) && marked[join];
-
-                    if (!b && !visited /*&& IsCloser(newDistance, disnatces)*/)
-                    {
-                        if (string.Join("", ns) == target) return distanceInit;
-
-
-                        queue.Enqueue(ns);
-                        marked[join] = true;
+                        for (var d = -1; d <= 1; d += 2)
+                        {
+                            var y = ((node[i] - '0') + d + 10) % 10;
+                            var nei = node.Substring(0, i) + ("" + y) + node.Substring(i + 1);
+                            if (!seen.Contains(nei))
+                            {
+                                seen.Add(nei);
+                                queue.Enqueue(nei);
+                            }
+                        }
                     }
                 }
             }
 
-
             return -1;
-        }
-
-        private bool IsCloser(int[] newDistance, int[] disnatces)
-        {
-            return
-                newDistance[0] <= disnatces[0] &&
-                newDistance[1] <= disnatces[1] &&
-                newDistance[2] <= disnatces[2] &&
-                newDistance[3] <= disnatces[3];
-        }
-
-        private bool isTarget(int[] newDistance)
-        {
-            return
-                newDistance[0] == 0 &&
-                newDistance[1] == 0 &&
-                newDistance[2] == 0 &&
-                newDistance[3] == 0;
-        }
-
-        private static int[] TargeState(string target)
-        {
-            return target.ToCharArray().Select(c => Int32.Parse(c.ToString())).ToArray();
-        }
-
-        private void print(int[] ns)
-        {
-            Console.WriteLine(String.Join("", ns));
         }
     }
 }

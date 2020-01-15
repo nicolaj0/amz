@@ -10,6 +10,7 @@
         <e p="AutocompleteSystem.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="ConsoleApp4.csproj" t="IncludeRecursive" />
+        <e p="FreqStack.cs" t="Include" />
         <e p="MapSum.cs" t="Include" />
         <e p="MovingAverage.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
@@ -28,9 +29,11 @@
         <e p="SolutionBfs.cs" t="Include" />
         <e p="SolutionBinarySearch.cs" t="Include" />
         <e p="SolutionConnectDfs.cs" t="Include" />
+        <e p="SolutionCountBattleships.cs" t="Include" />
         <e p="SolutionCutOffTree.cs" t="Include" />
         <e p="SolutionDietPlanPerformance.cs" t="Include" />
         <e p="SolutionDomino.cs" t="Include" />
+        <e p="SolutionDuplicate.cs" t="Include" />
         <e p="SolutionFindWords.cs" t="Include" />
         <e p="SolutionFirstUniqChar.cs" t="Include" />
         <e p="SolutionGcdOfStrings.cs" t="Include" />
@@ -38,6 +41,7 @@
         <e p="SolutionHotelRoom.cs" t="Include" />
         <e p="SolutionIsValid.cs" t="Include" />
         <e p="SolutionIsValidSudoku.cs" t="Include" />
+        <e p="SolutionLevelOrder.cs" t="Include" />
         <e p="SolutionLongestPalindrome.cs" t="Include" />
         <e p="SolutionMaxDepth.cs" t="Include" />
         <e p="SolutionMergeTwoLists.cs" t="Include" />
@@ -49,6 +53,7 @@
         <e p="SolutionRemoveNthFromEnd.cs" t="Include" />
         <e p="SolutionReplaceWords.cs" t="Include" />
         <e p="SolutionReverseList.cs" t="Include" />
+        <e p="SolutionRomanToInt.cs" t="Include" />
         <e p="SolutionSearchMatrix.cs" t="Include" />
         <e p="SolutionSearchTotatingArray.cs" t="Include" />
         <e p="SolutionShortestPathwithAlternatingColors.cs" t="Include" />

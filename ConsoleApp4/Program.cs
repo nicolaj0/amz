@@ -2,84 +2,100 @@
 
 using System;
 using System.Collections;
-using System.Collections.Concurrent;
 using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Numerics;
-using System.Runtime.CompilerServices;
-using System.Threading.Channels;
-using System.Xml;
-using ConsoleApp5;
-using Microsoft.VisualBasic;
-using Microsoft.VisualBasic.CompilerServices;
 
 namespace ConsoleApp4
 {
-    
-    
-    
-    class Solution {
-        private bool helper(TreeNode node, int? lower, int? upper) {
-            if (node == null) return true;
+    /*public class Solution {
+        private int _k;
 
-            int val = node.val;
-            if (lower != null && val <= lower) return false;
-            if (upper != null && val >= upper) return false;
-
-            if (! helper(node.right, val, upper)) return false;
-            if (! helper(node.left, lower, val)) return false;
-            return true;
-        }
-
-        public bool IsValidBST(TreeNode root) {
-            return helper(root, null, null);
-        }
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    public class SolutionIsValidBST
-    {
-        public bool IsValidBST(TreeNode root)
+        public int MergeStones(int[] stones, int K)
         {
-            try
-            {
-                printInorder(root, new List<TreeNode>());
-                return true;
-            }
-            catch (Exception e)
-            {
-                return false;
-            }
+            _k = K;
+            return helper(stones);
         }
 
-        void printInorder(TreeNode node, List<TreeNode> visited)
+        private int helper(int[] stones)
         {
-            if (node == null)
-                return;
-
-            printInorder(node.left, visited);
-
-            TreeNode previous = null;
-            if (visited.Count > 0)
+            var min = int.MaxValue;
+            var start = 0;
+            var curr = 0;
+            for (int i = 0; i < stones.Length; i++)
             {
-                previous = visited.Last();
-                if (previous != null && previous.val >= node.val)
+                curr = 0;
+                for (int j = i; j < stones.Length -_k; j++)
                 {
-                    throw new Exception();
+                    curr += stones[j];
+                    
+                }
+                if (curr < min )
+                {
+                    min = curr;
+                    start = i;
                 }
             }
+            var newArray = new List<int>();
 
-            visited.Add(node);
+            for (int i = 0; i < start; i++)
+            {
+                newArray.Add(stones[i]);
+            }
 
-            printInorder(node.right, visited);
+            newArray.Add(min);
+            for (int i = start+1; i < stones.Length; i++)
+            {
+                newArray.Add(stones[i]);
+            }
+
+
+            return min + helper(newArray.ToArray());
+        }
+    }*/
+
+
+    public class MinStack
+    {
+        Stack<int> stack = new Stack<int>();
+        Stack<int> minStack = new Stack<int>();
+
+        int min = Int32.MaxValue;
+
+        public MinStack()
+        {
+        }
+
+        public void Push(int x)
+        {
+            if (x <= min)
+            {
+                minStack.Push(x);
+                min = x;
+            }
+
+            stack.Push(x);
+        }
+
+        public void Pop()
+        {
+            var pop = stack.Pop();
+            if (pop == min)
+            {
+                if (minStack.Count > 1)
+                {
+                    minStack.Pop();
+                    min = minStack.Peek();
+                }
+            }
+        }
+
+        public int Top()
+        {
+            return stack.Peek();
+        }
+
+        public int GetMin()
+        {
+            return min;
         }
     }
 
@@ -123,6 +139,48 @@ namespace ConsoleApp4
     {
         static void Main(string[] args)
         {
+            /*var res = new Solution().MergeStones(new []{3,2,4,1},2);
+            Console.WriteLine(res);*/
+
+
+            //
+            var res = new SolutionShortestDistance().ShortestDistance(
+                new[]
+                {
+                    new[] {0, 0, 1, 0, 0},
+                    new[] {0, 0, 0, 0, 0},
+                    new[] {0, 0, 0, 1, 0},
+                    new[] {1, 1, 0, 1, 1},
+                    new[] {0, 0, 0, 0, 0}
+                }, new[] {0, 4}, new[] {1, 2});
+            Console.WriteLine(res);
+            /*MinStack minStack = new MinStack();
+            minStack.Push(2);
+            minStack.Push(0);
+            minStack.Push(3);
+            minStack.Push(0);
+            minStack.GetMin();
+            minStack.Pop();
+            minStack.GetMin();
+            minStack.Pop();
+            minStack.GetMin();
+            minStack.Pop();
+            minStack.GetMin();*/
+
+            //  var res = new Solution().GroupAnagrams(new []{"eat", "tea", "tan", "ate", "nat", "bat"});
+
+
+            /*var res = new SolutionStr2Tree().Str2Tree("4(2(3)(1))(6(5))");
+
+            Console.WriteLine(res);*/
+            // var res = new Solution().ThreeSum(new []{-1, 0, 1, 2, -1, -4});
+            //var res = new SolutionThreeSum().ThreeSum(new[] {0, 0, 0, 0});
+
+            /*
+            var res = new SolutionReverse().Reverse(123);
+            Console.WriteLine(res);
+
+
             var TreeNode = new TreeNode(10)
             {
                 left = new TreeNode(5),
@@ -131,9 +189,9 @@ namespace ConsoleApp4
                 {
                     left = new TreeNode(6),
                     right = new TreeNode(20)
-                },
-            };
-            
+                }
+            };*/
+
             /*var TreeNode = new TreeNode(1)
             {
                 left = new TreeNode(1),
@@ -141,8 +199,8 @@ namespace ConsoleApp4
                 
             };*/
 
-            var res = new Solution().IsValidBST(TreeNode);
-            Console.WriteLine(res);
+            /*var res = new Solution().IsValidBST(TreeNode);
+            Console.WriteLine(res);*/
 
 
             // var res = new Solution().RomanToInt("MCMXCIV");

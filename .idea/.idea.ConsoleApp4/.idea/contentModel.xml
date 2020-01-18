@@ -3,6 +3,7 @@
   <component name="ContentModelStore">
     <e p="C:\Users\junic\.Rider2019.3\config\consoles\db" t="IncludeRecursive" />
     <e p="C:\Users\junic\.Rider2019.3\config\extensions" t="IncludeRecursive" />
+    <e p="C:\Users\junic\.Rider2019.3\config\scratches" t="IncludeRecursive" />
     <e p="C:\Users\junic\.Rider2019.3\system\extResources" t="IncludeRecursive" />
     <e p="C:\Users\junic\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_ConsoleApp4.-1488006734.00" t="ExcludeRecursive" />
     <e p="C:\Users\junic\RiderProjects\ConsoleApp4" t="IncludeFlat">
@@ -38,8 +39,11 @@
         <e p="SolutionFirstUniqChar.cs" t="Include" />
         <e p="SolutionGcdOfStrings.cs" t="Include" />
         <e p="SolutionGenerateMatrix.cs" t="Include" />
+        <e p="SolutionGroupAnagrams.cs" t="Include" />
         <e p="SolutionHotelRoom.cs" t="Include" />
         <e p="SolutionIsValid.cs" t="Include" />
+        <e p="SolutionIsValidBST.cs" t="Include" />
+        <e p="SolutionIsValidBST2.cs" t="Include" />
         <e p="SolutionIsValidSudoku.cs" t="Include" />
         <e p="SolutionLevelOrder.cs" t="Include" />
         <e p="SolutionLongestPalindrome.cs" t="Include" />
@@ -52,6 +56,7 @@
         <e p="SolutionRelativeSortArray.cs" t="Include" />
         <e p="SolutionRemoveNthFromEnd.cs" t="Include" />
         <e p="SolutionReplaceWords.cs" t="Include" />
+        <e p="SolutionReverse.cs" t="Include" />
         <e p="SolutionReverseList.cs" t="Include" />
         <e p="SolutionRomanToInt.cs" t="Include" />
         <e p="SolutionSearchMatrix.cs" t="Include" />
@@ -59,7 +64,9 @@
         <e p="SolutionShortestPathwithAlternatingColors.cs" t="Include" />
         <e p="SolutionSolve.cs" t="Include" />
         <e p="SolutionSqrt.cs" t="Include" />
+        <e p="SolutionStr2Tree.cs" t="Include" />
         <e p="SolutionthreeKeywordSuggestions.cs" t="Include" />
+        <e p="SolutionThreeSum.cs" t="Include" />
         <e p="SolutionTwoSum.cs" t="Include" />
         <e p="SolutionWordSquares.cs" t="Include" />
         <e p="SolutionZigzagLevelOrder.cs" t="Include" />

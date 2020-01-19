@@ -13,6 +13,7 @@
         <e p="ConsoleApp4.csproj" t="IncludeRecursive" />
         <e p="FreqStack.cs" t="Include" />
         <e p="MapSum.cs" t="Include" />
+        <e p="MinStack.cs" t="Include" />
         <e p="MovingAverage.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -29,9 +30,11 @@
         <e p="SolutionareIdentical.cs" t="Include" />
         <e p="SolutionBfs.cs" t="Include" />
         <e p="SolutionBinarySearch.cs" t="Include" />
+        <e p="SolutionBruteForce.cs" t="Include" />
         <e p="SolutionConnectDfs.cs" t="Include" />
         <e p="SolutionCountBattleships.cs" t="Include" />
         <e p="SolutionCutOffTree.cs" t="Include" />
+        <e p="SolutionDecodeVariations.cs" t="Include" />
         <e p="SolutionDietPlanPerformance.cs" t="Include" />
         <e p="SolutionDomino.cs" t="Include" />
         <e p="SolutionDuplicate.cs" t="Include" />
@@ -39,12 +42,15 @@
         <e p="SolutionFirstUniqChar.cs" t="Include" />
         <e p="SolutionGcdOfStrings.cs" t="Include" />
         <e p="SolutionGenerateMatrix.cs" t="Include" />
+        <e p="SolutionGenerateParentheses.cs" t="Include" />
         <e p="SolutionGroupAnagrams.cs" t="Include" />
         <e p="SolutionHotelRoom.cs" t="Include" />
+        <e p="SolutionIntToRoman.cs" t="Include" />
         <e p="SolutionIsValid.cs" t="Include" />
         <e p="SolutionIsValidBST.cs" t="Include" />
         <e p="SolutionIsValidBST2.cs" t="Include" />
         <e p="SolutionIsValidSudoku.cs" t="Include" />
+        <e p="SolutionLetterCombinations.cs" t="Include" />
         <e p="SolutionLevelOrder.cs" t="Include" />
         <e p="SolutionLongestPalindrome.cs" t="Include" />
         <e p="SolutionMaxDepth.cs" t="Include" />
@@ -52,6 +58,7 @@
         <e p="SolutionMostCommonWord.cs" t="Include" />
         <e p="SolutionOpenTheLock.cs" t="Include" />
         <e p="SolutionOrangesRotting.cs" t="Include" />
+        <e p="SolutionParenthsesis.cs" t="Include" />
         <e p="SolutionPartitionLabels.cs" t="Include" />
         <e p="SolutionRelativeSortArray.cs" t="Include" />
         <e p="SolutionRemoveNthFromEnd.cs" t="Include" />
@@ -61,6 +68,7 @@
         <e p="SolutionRomanToInt.cs" t="Include" />
         <e p="SolutionSearchMatrix.cs" t="Include" />
         <e p="SolutionSearchTotatingArray.cs" t="Include" />
+        <e p="SolutionShortestDistance.cs" t="Include" />
         <e p="SolutionShortestPathwithAlternatingColors.cs" t="Include" />
         <e p="SolutionSolve.cs" t="Include" />
         <e p="SolutionSqrt.cs" t="Include" />

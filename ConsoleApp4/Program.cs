@@ -2,149 +2,35 @@
 
 using System;
 using System.Collections;
-using System.Collections.Generic;
+using System.Globalization;
+using System.Linq;
+using Microsoft.VisualBasic;
 
 namespace ConsoleApp4
 {
-    /*public class Solution {
-        private int _k;
-
-        public int MergeStones(int[] stones, int K)
-        {
-            _k = K;
-            return helper(stones);
-        }
-
-        private int helper(int[] stones)
-        {
-            var min = int.MaxValue;
-            var start = 0;
-            var curr = 0;
-            for (int i = 0; i < stones.Length; i++)
-            {
-                curr = 0;
-                for (int j = i; j < stones.Length -_k; j++)
-                {
-                    curr += stones[j];
-                    
-                }
-                if (curr < min )
-                {
-                    min = curr;
-                    start = i;
-                }
-            }
-            var newArray = new List<int>();
-
-            for (int i = 0; i < start; i++)
-            {
-                newArray.Add(stones[i]);
-            }
-
-            newArray.Add(min);
-            for (int i = start+1; i < stones.Length; i++)
-            {
-                newArray.Add(stones[i]);
-            }
-
-
-            return min + helper(newArray.ToArray());
-        }
-    }*/
-
-
-    public class MinStack
-    {
-        Stack<int> stack = new Stack<int>();
-        Stack<int> minStack = new Stack<int>();
-
-        int min = Int32.MaxValue;
-
-        public MinStack()
-        {
-        }
-
-        public void Push(int x)
-        {
-            if (x <= min)
-            {
-                minStack.Push(x);
-                min = x;
-            }
-
-            stack.Push(x);
-        }
-
-        public void Pop()
-        {
-            var pop = stack.Pop();
-            if (pop == min)
-            {
-                if (minStack.Count > 1)
-                {
-                    minStack.Pop();
-                    min = minStack.Peek();
-                }
-            }
-        }
-
-        public int Top()
-        {
-            return stack.Peek();
-        }
-
-        public int GetMin()
-        {
-            return min;
-        }
-    }
-
-
-    public class TreeNode
-    {
-        public int val;
-        public TreeNode left;
-        public TreeNode right;
-
-        public TreeNode(int x)
-        {
-            val = x;
-        }
-
-        public override string ToString()
-        {
-            return $"{nameof(val)}: {val}";
-        }
-    }
-
-
-    public class ListNode
-    {
-        public int val;
-        public ListNode next;
-
-        public ListNode(int x)
-        {
-            val = x;
-        }
-
-        public override string ToString()
-        {
-            return $"{nameof(val)}: {val}";
-        }
-    }
-
-
     class Program
     {
         static void Main(string[] args)
         {
-            /*var res = new Solution().MergeStones(new []{3,2,4,1},2);
+            var res = new SolutionIntToRoman().IntToRoman(10);
+            Console.WriteLine(res);
+            // var res = new SolutionDecodeVariations().Decode("99999999999999999999999999991262326568131354613132135199999999999999999999999999999");
+            /*var res = new SolutionGenerateParentheses().generateParenthesis(3);
             Console.WriteLine(res);*/
+
+            /*var res = new SolutionLetterCombinations().LetterCombinations("23");
+
+            Console.WriteLine(res);*/
+            /*var res = new SolutionBruteForce().MaxArea(new[] {1, 8, 6, 2, 5, 4, 8, 3, 7});
+            Console.WriteLine(res);*/
+            /*
+            var res = new Solution().MergeStones(new []{3,2,4,1},2);
+            Console.WriteLine(res);
+            */
 
 
             //
-            var res = new SolutionShortestDistance().ShortestDistance(
+            /*var res = new SolutionShortestDistance().ShortestDistance(
                 new[]
                 {
                     new[] {0, 0, 1, 0, 0},
@@ -152,8 +38,8 @@ namespace ConsoleApp4
                     new[] {0, 0, 0, 1, 0},
                     new[] {1, 1, 0, 1, 1},
                     new[] {0, 0, 0, 0, 0}
-                }, new[] {0, 4}, new[] {1, 2});
-            Console.WriteLine(res);
+                }, new[] {0, 4}, new[] {1, 2});*/
+            // Console.WriteLine(res);
             /*MinStack minStack = new MinStack();
             minStack.Push(2);
             minStack.Push(0);
@@ -171,7 +57,7 @@ namespace ConsoleApp4
 
 
             /*var res = new SolutionStr2Tree().Str2Tree("4(2(3)(1))(6(5))");
-
+    
             Console.WriteLine(res);*/
             // var res = new Solution().ThreeSum(new []{-1, 0, 1, 2, -1, -4});
             //var res = new SolutionThreeSum().ThreeSum(new[] {0, 0, 0, 0});
@@ -179,12 +65,12 @@ namespace ConsoleApp4
             /*
             var res = new SolutionReverse().Reverse(123);
             Console.WriteLine(res);
-
-
+    
+    
             var TreeNode = new TreeNode(10)
             {
                 left = new TreeNode(5),
-
+    
                 right = new TreeNode(15)
                 {
                     left = new TreeNode(6),
@@ -195,7 +81,7 @@ namespace ConsoleApp4
             /*var TreeNode = new TreeNode(1)
             {
                 left = new TreeNode(1),
-
+    
                 
             };*/
 
@@ -283,6 +169,41 @@ namespace ConsoleApp4
                  new List<string>(){"bags","baggage","banner","box","clothes","baba"}, "bags");
     
              res.ForEach(r => Console.WriteLine(string.Join(" ", r)));*/
+        }
+    }
+
+    public class TreeNode
+    {
+        public int val;
+        public TreeNode left;
+        public TreeNode right;
+
+        public TreeNode(int x)
+
+        {
+            val = x;
+        }
+
+        public override string ToString()
+        {
+            return $"{nameof(val)}: {val}";
+        }
+    }
+
+
+    public class ListNode
+    {
+        public int val;
+        public ListNode next;
+
+        public ListNode(int x)
+        {
+            val = x;
+        }
+
+        public override string ToString()
+        {
+            return $"{nameof(val)}: {val}";
         }
     }
 }

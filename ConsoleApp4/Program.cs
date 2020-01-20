@@ -12,8 +12,30 @@ namespace ConsoleApp4
     {
         static void Main(string[] args)
         {
-            var res = new SolutionIntToRoman().IntToRoman(10);
+            var head = new SolutionCopyRandomList.Node(1);
+            var a = new SolutionCopyRandomList.Node(2);
+            var b = new SolutionCopyRandomList.Node(3);
+            var c = new SolutionCopyRandomList.Node(4);
+            var d = new SolutionCopyRandomList.Node(5);
+
+            head.next = a;
+            head.random = b;
+
+            a.next = c;
+            a.random = head;
+
+            var res = new SolutionCopyRandomList().CopyRandomList(null);
+
             Console.WriteLine(res);
+
+            // var res = new Solution().CombinationSum(new []{2},7);
+            /*var res = new SolutionCombinationSum().CombinationSum(new[] {2, 3, 6, 7, 8}, 7);*/
+            //var res = new Solution().CombinationSum(new []{2,3,5},8);
+            // var res = new Solution().CombinationSum(new []{1},1);
+
+
+            /*var res = new SolutionIntToRoman().IntToRoman(10);
+            Console.WriteLine(res);*/
             // var res = new SolutionDecodeVariations().Decode("99999999999999999999999999991262326568131354613132135199999999999999999999999999999");
             /*var res = new SolutionGenerateParentheses().generateParenthesis(3);
             Console.WriteLine(res);*/
@@ -206,4 +228,6 @@ namespace ConsoleApp4
             return $"{nameof(val)}: {val}";
         }
     }
+    
+    
 }

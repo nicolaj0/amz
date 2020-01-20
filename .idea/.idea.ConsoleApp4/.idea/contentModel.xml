@@ -31,6 +31,7 @@
         <e p="SolutionBfs.cs" t="Include" />
         <e p="SolutionBinarySearch.cs" t="Include" />
         <e p="SolutionBruteForce.cs" t="Include" />
+        <e p="SolutionCombinationSum.cs" t="Include" />
         <e p="SolutionConnectDfs.cs" t="Include" />
         <e p="SolutionCountBattleships.cs" t="Include" />
         <e p="SolutionCutOffTree.cs" t="Include" />

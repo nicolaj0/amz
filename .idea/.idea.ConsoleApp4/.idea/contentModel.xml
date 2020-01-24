@@ -33,6 +33,7 @@
         <e p="SolutionBruteForce.cs" t="Include" />
         <e p="SolutionCombinationSum.cs" t="Include" />
         <e p="SolutionConnectDfs.cs" t="Include" />
+        <e p="SolutionCopyRandomList.cs" t="Include" />
         <e p="SolutionCountBattleships.cs" t="Include" />
         <e p="SolutionCutOffTree.cs" t="Include" />
         <e p="SolutionDecodeVariations.cs" t="Include" />
@@ -41,20 +42,28 @@
         <e p="SolutionDuplicate.cs" t="Include" />
         <e p="SolutionFindWords.cs" t="Include" />
         <e p="SolutionFirstUniqChar.cs" t="Include" />
+        <e p="SolutionFloodFill.cs" t="Include" />
         <e p="SolutionGcdOfStrings.cs" t="Include" />
         <e p="SolutionGenerateMatrix.cs" t="Include" />
         <e p="SolutionGenerateParentheses.cs" t="Include" />
         <e p="SolutionGroupAnagrams.cs" t="Include" />
+        <e p="SolutionHasCycle.cs" t="Include" />
+        <e p="SolutionHighFive.cs" t="Include" />
         <e p="SolutionHotelRoom.cs" t="Include" />
+        <e p="SolutionInorderTraversalIrteration.cs" t="Include" />
         <e p="SolutionIntToRoman.cs" t="Include" />
+        <e p="SolutionIsSubtree.cs" t="Include" />
         <e p="SolutionIsValid.cs" t="Include" />
         <e p="SolutionIsValidBST.cs" t="Include" />
         <e p="SolutionIsValidBST2.cs" t="Include" />
         <e p="SolutionIsValidSudoku.cs" t="Include" />
+        <e p="SolutionLadderLength.cs" t="Include" />
+        <e p="SolutionLengthOfLongestSubstringTwoDistinct.cs" t="Include" />
         <e p="SolutionLetterCombinations.cs" t="Include" />
         <e p="SolutionLevelOrder.cs" t="Include" />
         <e p="SolutionLongestPalindrome.cs" t="Include" />
         <e p="SolutionMaxDepth.cs" t="Include" />
+        <e p="SolutionMaxSubArray.cs" t="Include" />
         <e p="SolutionMergeTwoLists.cs" t="Include" />
         <e p="SolutionMostCommonWord.cs" t="Include" />
         <e p="SolutionOpenTheLock.cs" t="Include" />
@@ -74,6 +83,7 @@
         <e p="SolutionSolve.cs" t="Include" />
         <e p="SolutionSqrt.cs" t="Include" />
         <e p="SolutionStr2Tree.cs" t="Include" />
+        <e p="SolutionSufficientSubset.cs" t="Include" />
         <e p="SolutionthreeKeywordSuggestions.cs" t="Include" />
         <e p="SolutionThreeSum.cs" t="Include" />
         <e p="SolutionTwoSum.cs" t="Include" />

@@ -1,5 +1,44 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
+
+class SolutionletterCombinations
+{
+    Dictionary<String, String> phone = new Dictionary<String, String>()
+    {
+        {"2", "abc"},
+        {"3", "def"},
+        {"4", "ghi"},
+        {"5", "jkl"},
+        {"6", "mno"},
+        {"7", "pqrs"},
+        {"8", "tuv"},
+        {"9", "wxyz"},
+    };
+
+    List<string> output = new List<string>();
+
+    public List<String> letterCombinations(String digits)
+    {
+        if (digits.Length != 0)
+            backtrack("", digits);
+        return output;
+    }
+
+    private void backtrack(string combination, string nextDigits)
+    {
+        if (string.IsNullOrEmpty(nextDigits))
+        {
+            output.Add(combination);
+        }
+        else
+        {
+            var next = phone[nextDigits.Substring(0, 1)];
+            next.ToList().ForEach(c => { backtrack(string.Concat(combination, c), nextDigits.Substring(1)); });
+        }
+       
+    }
+}
 
 namespace ConsoleApp4
 {
@@ -21,7 +60,7 @@ namespace ConsoleApp4
             _refe['6'] = new List<char>() {'m', 'n', 'o'};
             _refe['7'] = new List<char>() {'p', 'q', 'r', 's'};
             _refe['8'] = new List<char>() {'t', 'u', 'v'};
-            _refe['9'] = new List<char>() {'w', 'w', 'x', 'y', 'z'};
+            _refe['9'] = new List<char>() {'w', 'x', 'y', 'z'};
 
             _output = new List<string>();
             n = digits.Length;

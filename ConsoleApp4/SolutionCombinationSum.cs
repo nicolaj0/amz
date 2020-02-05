@@ -1,6 +1,36 @@
 ﻿using System;
 using System.Collections.Generic;
 
+public class SolutionCombinationSum
+{
+    private List<List<int>> _combinationSum;
+
+    public List<List<int>> CombinationSum(int[] nums, int target)
+    {
+        _combinationSum = new List<List<int>>();
+        //  Array.Sort(nums);
+        backtrack(new LinkedList<int>(), nums, target, 0);
+        return _combinationSum;
+    }
+
+    private void backtrack(LinkedList<int> tempList, int[] nums, int remain, int start)
+    {
+        if (remain < 0) 
+            return;
+        if (remain == 0) 
+            _combinationSum.Add(new List<int>(tempList));
+        else
+        {
+            for (int i = start; i < nums.Length; i++)
+            {
+                tempList.AddLast(nums[i]);
+                backtrack(tempList, nums, remain - nums[i], i); // not i + 1 because we can reuse same elements
+                tempList.RemoveLast();
+            }
+        }
+    }
+}
+
 namespace ConsoleApp4
 {
     public class SolutionCombinationSum

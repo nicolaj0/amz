@@ -43,8 +43,7 @@ namespace ConsoleApp4
                     ans.Append(" ");
 
                 TrieNode cur = trie;
-                foreach (var letter in word.TakeWhile(letter =>
-                    cur.Children[letter - 'a'] != null && cur.Word == null))
+                foreach (var letter in word.TakeWhile(letter => cur.Children[letter - 'a'] != null && cur.Word == null))
                 {
                     cur = cur.Children[letter - 'a'];
                 }

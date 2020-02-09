@@ -6,58 +6,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Runtime.CompilerServices;
-using System.Text;
 using ConsoleApp4;
-
-
-public class Solution
-{
-    public string DecodeString(string s)
-    {
-        String res = "";
-        Stack<int> countStack = new Stack<int>();
-        Stack<String> resStack = new Stack<string>();
-        int idx = 0;
-        while (idx < s.Length)
-        {
-            if (char.IsDigit(s[idx]))
-            {
-                int count = 0;
-                while (char.IsDigit(s[idx]))
-                {
-                    count = 10 * count + (s[idx] - '0');
-                    idx++;
-                }
-
-                countStack.Push(count);
-            }
-            else if (s[idx] == '[')
-            {
-                resStack.Push(res);
-                res = "";
-                idx++;
-            }
-            else if (s[idx] == ']')
-            {
-                StringBuilder temp = new StringBuilder(resStack.Pop());
-                int repeatTimes = countStack.Pop();
-                for (int i = 0; i < repeatTimes; i++)
-                {
-                    temp.Append(res);
-                }
-
-                res = temp.ToString();
-                idx++;
-            }
-            else
-            {
-                res += s[idx++];
-            }
-        }
-
-        return res;
-    }
-}
 
 
 public class Solution1
@@ -66,20 +15,31 @@ public class Solution1
     {
         static void Main(string[] args)
         {
-           var res  = new Solution().decodeString("2[abc]3[cd]ef");
-           Console.WriteLine(res);
-
-            /*var res = new SolutionSnakesAndLadders().SnakesAndLadders(new[]
+            var t1 = new TreeNode(1)
             {
-                new[] {-1, -1, -1, -1, -1, -1},
-                new[] {-1, -1, -1, -1, -1, -1},
-                new[] {-1, -1, -1, -1, -1, -1},
-                new[] {-1, -1, -1, -1, -1, -1},
-                new[] {-1, 35, -1, -1, 13, -1},
-                new[] {-1, 15, -1, -1, -1, -1},
-            });
+                left = new TreeNode(3)
+                {
+                    left = new TreeNode(5),
+                },
+                right = new TreeNode(2)
+               
+            };
+            
+            var t2 = new TreeNode(2)
+            {
+                left = new TreeNode(1)
+                {
+                    right = new TreeNode(4)
+                },
+                right = new TreeNode(3)
+                {
+                    right = new TreeNode(7)
+                }
+               
+            };
 
-            Console.WriteLine(res);*/
+            var res = new SolutionMergeTrees().MergeTrees(t1,t2);
+            Console.WriteLine(res);
         }
     }
 }

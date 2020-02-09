@@ -41,6 +41,7 @@
         <e p="SolutionCopyRandomList.cs" t="Include" />
         <e p="SolutionCountBattleships.cs" t="Include" />
         <e p="SolutionCutOffTree.cs" t="Include" />
+        <e p="SolutionDecodeString.cs" t="Include" />
         <e p="SolutionDecodeVariations.cs" t="Include" />
         <e p="SolutiondepthSum.cs" t="Include" />
         <e p="SolutionDietPlanPerformance.cs" t="Include" />
@@ -62,6 +63,7 @@
         <e p="SolutionHotelRoom.cs" t="Include" />
         <e p="SolutionInorderTraversalIrteration.cs" t="Include" />
         <e p="SolutionIntToRoman.cs" t="Include" />
+        <e p="SolutionInvertTree.cs" t="Include" />
         <e p="SolutionIsBalanced.cs" t="Include" />
         <e p="SolutionIsSameTree.cs" t="Include" />
         <e p="SolutionIsSubtree.cs" t="Include" />
@@ -83,8 +85,10 @@
         <e p="SolutionMinDepth.cs" t="Include" />
         <e p="SolutionMissingElement.cs" t="Include" />
         <e p="SolutionMostCommonWord.cs" t="Include" />
+        <e p="SolutionNetworkDelayTime.cs" t="Include" />
         <e p="SolutionOpenTheLock.cs" t="Include" />
         <e p="SolutionOrangesRotting.cs" t="Include" />
+        <e p="SolutionPacificAtlantic.cs" t="Include" />
         <e p="SolutionParenthsesis.cs" t="Include" />
         <e p="SolutionPartitionLabels.cs" t="Include" />
         <e p="SolutionPathSum.cs" t="Include" />
@@ -95,6 +99,7 @@
         <e p="SolutionReverse.cs" t="Include" />
         <e p="SolutionReverseList.cs" t="Include" />
         <e p="SolutionRightSideView.cs" t="Include" />
+        <e p="SolutionRob.cs" t="Include" />
         <e p="SolutionRomanToInt.cs" t="Include" />
         <e p="SolutionSearchMatrix.cs" t="Include" />
         <e p="SolutionSearchTotatingArray.cs" t="Include" />

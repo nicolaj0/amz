@@ -3,10 +3,87 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel.Design;
 using System.Globalization;
 using System.Linq;
 using System.Runtime.CompilerServices;
+using System.Text.RegularExpressions;
 using ConsoleApp4;
+using Microsoft.VisualBasic;
+
+
+/*public class Solution
+{
+    public int[] FindOrder(int numCourses, int[][] prerequisites)
+    {
+    }
+
+    public class Digraph
+    {
+        public int E { get; set; }
+        public int V { get; set; }
+        public List<int>[] adj; // adjacency lists
+
+        public Digraph(int V)
+        {
+            this.V = V;
+            this.E = 0;
+            adj = new List<int>[V]; // Create array of lists.
+            for (int v = 0; v < V; v++) // Initialize all lists
+                adj[v] = new List<int>(); //   to empty.
+        }
+
+        public void addEdge(int from, int to)
+        {
+            adj[from].Add((to)); // Add w to v's list.
+            E++;
+        }
+
+        void topologicalSortUtil(int v, boolean visited[], 
+        Stack stack) 
+        { 
+            // Mark the current node as visited. 
+            visited[v] = true; 
+            Integer i; 
+  
+            // Recur for all the vertices adjacent to this 
+            // vertex 
+            Iterator<Integer> it = adj[v].iterator(); 
+            while (it.hasNext()) 
+            { 
+                i = it.next(); 
+                if (!visited[i]) 
+                    topologicalSortUtil(i, visited, stack); 
+            } 
+  
+            // Push current vertex to stack which stores result 
+            stack.push(new Integer(v)); 
+        } 
+  
+        // The function to do Topological Sort. It uses 
+        // recursive topologicalSortUtil() 
+        void topologicalSort() 
+        { 
+            Stack stack = new Stack(); 
+  
+            // Mark all the vertices as not visited 
+            bool visited = new bool[V]; 
+            for (int i = 0; i < V; i++) 
+                visited[i] = false; 
+  
+            // Call the recursive helper function to store 
+            // Topological Sort starting from all vertices 
+            // one by one 
+            for (int i = 0; i < V; i++) 
+                if (visited[i] == false) 
+                    topologicalSortUtil(i, visited, stack); 
+  
+            // Print contents of stack 
+            while (stack.empty()==false) 
+                System.out.print(stack.pop() + " "); 
+        } 
+    }
+}*/
 
 
 public class Solution1
@@ -15,30 +92,26 @@ public class Solution1
     {
         static void Main(string[] args)
         {
-            var t1 = new TreeNode(1)
+            var s = new TreeNode(3)
             {
-                left = new TreeNode(3)
+                left = new TreeNode(4)
                 {
-                    left = new TreeNode(5),
+                    left = new TreeNode(1),
+                    right = new TreeNode(2)
+                    
                 },
-                right = new TreeNode(2)
-               
-            };
-            
-            var t2 = new TreeNode(2)
-            {
-                left = new TreeNode(1)
-                {
-                    right = new TreeNode(4)
-                },
-                right = new TreeNode(3)
-                {
-                    right = new TreeNode(7)
-                }
-               
+                right = new TreeNode(5)
+              
             };
 
-            var res = new SolutionMergeTrees().MergeTrees(t1,t2);
+            var t = new TreeNode(4)
+            {
+                left = new TreeNode(1),
+                right = new TreeNode(2)
+
+            };
+            
+            var res = new SolutionIsSubtree().IsSubtree(s,t);
             Console.WriteLine(res);
         }
     }

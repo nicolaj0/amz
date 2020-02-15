@@ -17,6 +17,7 @@
         <e p="MedianFinder.cs" t="Include" />
         <e p="MinStack.cs" t="Include" />
         <e p="MovingAverage.cs" t="Include" />
+        <e p="NestedIterator.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.0" t="Include">
@@ -31,6 +32,7 @@
         <e p="Solution2minimumHours.cs" t="Include" />
         <e p="SolutionareIdentical.cs" t="Include" />
         <e p="SolutionAverageOfLevels.cs" t="Include" />
+        <e p="SolutionAverageOfLevels2.cs" t="Include" />
         <e p="SolutionBfs.cs" t="Include" />
         <e p="SolutionBinarySearch.cs" t="Include" />
         <e p="SolutionBinaryTreePaths.cs" t="Include" />
@@ -38,6 +40,7 @@
         <e p="SolutionBuildTree.cs" t="Include" />
         <e p="SolutionCombinationSum.cs" t="Include" />
         <e p="SolutionConnectDfs.cs" t="Include" />
+        <e p="SolutionConvertBST.cs" t="Include" />
         <e p="SolutionCopyRandomList.cs" t="Include" />
         <e p="SolutionCountBattleships.cs" t="Include" />
         <e p="SolutionCutOffTree.cs" t="Include" />
@@ -81,6 +84,7 @@
         <e p="SolutionLowestCommonAncestor.cs" t="Include" />
         <e p="SolutionMaxDepth.cs" t="Include" />
         <e p="SolutionMaxSubArray.cs" t="Include" />
+        <e p="SolutionMergeTrees.cs" t="Include" />
         <e p="SolutionMergeTwoLists.cs" t="Include" />
         <e p="SolutionMinDepth.cs" t="Include" />
         <e p="SolutionMissingElement.cs" t="Include" />
@@ -95,6 +99,7 @@
         <e p="SolutionPermute.cs" t="Include" />
         <e p="SolutionRelativeSortArray.cs" t="Include" />
         <e p="SolutionRemoveNthFromEnd.cs" t="Include" />
+        <e p="SolutionReorderLogFiles.cs" t="Include" />
         <e p="SolutionReplaceWords.cs" t="Include" />
         <e p="SolutionReverse.cs" t="Include" />
         <e p="SolutionReverseList.cs" t="Include" />
@@ -115,14 +120,18 @@
         <e p="SolutionSubsetsWithDup.cs" t="Include" />
         <e p="SolutionSufficientSubset.cs" t="Include" />
         <e p="SolutionSumNumbers.cs" t="Include" />
+        <e p="SolutionSumOfLeftLeaves.cs" t="Include" />
         <e p="SolutionthreeKeywordSuggestions.cs" t="Include" />
         <e p="SolutionThreeSum.cs" t="Include" />
+        <e p="SolutionTopKFrequent.cs" t="Include" />
         <e p="SolutionTrap.cs" t="Include" />
         <e p="SolutionTwoSum.cs" t="Include" />
+        <e p="SolutionUpdateMatrix.cs" t="Include" />
         <e p="SolutionWallsAndGates.cs" t="Include" />
         <e p="SolutionWordBreak.cs" t="Include" />
         <e p="SolutionWordSquares.cs" t="Include" />
         <e p="SolutionZigzagLevelOrder.cs" t="Include" />
+        <e p="TicTacToe.cs" t="Include" />
         <e p="TimeMap.cs" t="Include" />
         <e p="Trie.cs" t="Include" />
         <e p="WordDictionary.cs" t="Include" />

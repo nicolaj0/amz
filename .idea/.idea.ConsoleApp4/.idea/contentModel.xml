@@ -38,6 +38,7 @@
         <e p="SolutionBinaryTreePaths.cs" t="Include" />
         <e p="SolutionBruteForce.cs" t="Include" />
         <e p="SolutionBuildTree.cs" t="Include" />
+        <e p="SolutionCoinChange.cs" t="Include" />
         <e p="SolutionCombinationSum.cs" t="Include" />
         <e p="SolutionConnectDfs.cs" t="Include" />
         <e p="SolutionConvertBST.cs" t="Include" />
@@ -50,6 +51,7 @@
         <e p="SolutionDietPlanPerformance.cs" t="Include" />
         <e p="SolutionDomino.cs" t="Include" />
         <e p="SolutionDuplicate.cs" t="Include" />
+        <e p="SolutionExist.cs" t="Include" />
         <e p="SolutionFindTarget.cs" t="Include" />
         <e p="SolutionFindWords.cs" t="Include" />
         <e p="SolutionFirstUniqChar.cs" t="Include" />

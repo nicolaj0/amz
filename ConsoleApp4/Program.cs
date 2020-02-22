@@ -18,6 +18,8 @@ public class Solution1
     {
         static void Main(string[] args)
         {
+            var res = new SolutionMaxProfit().MaxProfit(new int[]{7,1,5,3,6,4});
+            Console.WriteLine(res);
         }
     }
 }

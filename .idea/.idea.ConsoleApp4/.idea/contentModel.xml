@@ -41,6 +41,7 @@
         <e p="SolutionCoinChange.cs" t="Include" />
         <e p="SolutionCombinationSum.cs" t="Include" />
         <e p="SolutionConnectDfs.cs" t="Include" />
+        <e p="SolutionConstructMaximumBinaryTree.cs" t="Include" />
         <e p="SolutionConvertBST.cs" t="Include" />
         <e p="SolutionCopyRandomList.cs" t="Include" />
         <e p="SolutionCountBattleships.cs" t="Include" />
@@ -52,6 +53,7 @@
         <e p="SolutionDomino.cs" t="Include" />
         <e p="SolutionDuplicate.cs" t="Include" />
         <e p="SolutionExist.cs" t="Include" />
+        <e p="SolutionFindMode.cs" t="Include" />
         <e p="SolutionFindTarget.cs" t="Include" />
         <e p="SolutionFindWords.cs" t="Include" />
         <e p="SolutionFirstUniqChar.cs" t="Include" />
@@ -83,6 +85,7 @@
         <e p="SolutionLetterCombinations.cs" t="Include" />
         <e p="SolutionLevelOrder.cs" t="Include" />
         <e p="SolutionLongestPalindrome.cs" t="Include" />
+        <e p="SolutionLongestUnivaluePath.cs" t="Include" />
         <e p="SolutionLowestCommonAncestor.cs" t="Include" />
         <e p="SolutionMaxDepth.cs" t="Include" />
         <e p="SolutionMaxSubArray.cs" t="Include" />
@@ -100,6 +103,7 @@
         <e p="SolutionPartitionLabels.cs" t="Include" />
         <e p="SolutionPathSum.cs" t="Include" />
         <e p="SolutionPermute.cs" t="Include" />
+        <e p="SolutionRangeSumBST.cs" t="Include" />
         <e p="SolutionRelativeSortArray.cs" t="Include" />
         <e p="SolutionRemoveNthFromEnd.cs" t="Include" />
         <e p="SolutionReorderLogFiles.cs" t="Include" />
@@ -129,6 +133,7 @@
         <e p="SolutionThreeSum.cs" t="Include" />
         <e p="SolutionTopKFrequent.cs" t="Include" />
         <e p="SolutionTrap.cs" t="Include" />
+        <e p="SolutiontrimBST.cs" t="Include" />
         <e p="SolutionTwoSum.cs" t="Include" />
         <e p="SolutionUpdateMatrix.cs" t="Include" />
         <e p="SolutionVerticalOrder.cs" t="Include" />

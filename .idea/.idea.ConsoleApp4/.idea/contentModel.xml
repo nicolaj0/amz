@@ -38,6 +38,8 @@
         <e p="SolutionBinaryTreePaths.cs" t="Include" />
         <e p="SolutionBruteForce.cs" t="Include" />
         <e p="SolutionBuildTree.cs" t="Include" />
+        <e p="SolutionCanJump.cs" t="Include" />
+        <e p="SolutionCloneGraph.cs" t="Include" />
         <e p="SolutionCoinChange.cs" t="Include" />
         <e p="SolutionCombinationSum.cs" t="Include" />
         <e p="SolutionConnectDfs.cs" t="Include" />
@@ -53,16 +55,19 @@
         <e p="SolutionDomino.cs" t="Include" />
         <e p="SolutionDuplicate.cs" t="Include" />
         <e p="SolutionExist.cs" t="Include" />
+        <e p="SolutionFindBottomLeftValue.cs" t="Include" />
         <e p="SolutionFindMode.cs" t="Include" />
         <e p="SolutionFindTarget.cs" t="Include" />
         <e p="SolutionFindWords.cs" t="Include" />
         <e p="SolutionFirstUniqChar.cs" t="Include" />
         <e p="SolutionFlatten.cs" t="Include" />
         <e p="SolutionFloodFill.cs" t="Include" />
+        <e p="SolutionFourSum.cs" t="Include" />
         <e p="SolutionGameOfLife.cs" t="Include" />
         <e p="SolutionGcdOfStrings.cs" t="Include" />
         <e p="SolutionGenerateMatrix.cs" t="Include" />
         <e p="SolutionGenerateParentheses.cs" t="Include" />
+        <e p="SolutiongetImportance.cs" t="Include" />
         <e p="SolutionGroupAnagrams.cs" t="Include" />
         <e p="SolutionHasCycle.cs" t="Include" />
         <e p="SolutionHasPathSum.cs" t="Include" />
@@ -72,6 +77,10 @@
         <e p="SolutionIntToRoman.cs" t="Include" />
         <e p="SolutionInvertTree.cs" t="Include" />
         <e p="SolutionIsBalanced.cs" t="Include" />
+        <e p="SolutionIsBipartite.cs" t="Include" />
+        <e p="SolutionIsCousins.cs" t="Include" />
+        <e p="SolutionIsCousinsBfs.cs" t="Include" />
+        <e p="SolutionIsHappy.cs" t="Include" />
         <e p="SolutionIsSameTree.cs" t="Include" />
         <e p="SolutionIsSubtree.cs" t="Include" />
         <e p="SolutionIsSymmetric.cs" t="Include" />
@@ -88,7 +97,9 @@
         <e p="SolutionLongestUnivaluePath.cs" t="Include" />
         <e p="SolutionLowestCommonAncestor.cs" t="Include" />
         <e p="SolutionMaxDepth.cs" t="Include" />
+        <e p="SolutionMaxProfit.cs" t="Include" />
         <e p="SolutionMaxSubArray.cs" t="Include" />
+        <e p="SolutionMerge.cs" t="Include" />
         <e p="SolutionMergeTrees.cs" t="Include" />
         <e p="SolutionMergeTwoLists.cs" t="Include" />
         <e p="SolutionMinDepth.cs" t="Include" />
@@ -119,6 +130,7 @@
         <e p="SolutionShortestPathwithAlternatingColors.cs" t="Include" />
         <e p="SolutionSnakesAndLadders.cs" t="Include" />
         <e p="SolutionSolve.cs" t="Include" />
+        <e p="SolutionSortColors.cs" t="Include" />
         <e p="SolutionSortedArrayToBst.cs" t="Include" />
         <e p="SolutionsortedListToBST.cs" t="Include" />
         <e p="SolutionSpellchecker.cs" t="Include" />

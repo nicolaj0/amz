@@ -5,11 +5,91 @@ using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel.Design;
 using System.Globalization;
+using System.IO;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text.RegularExpressions;
 using ConsoleApp4;
 using Microsoft.VisualBasic;
+
+
+class Solution
+{
+    private static List<long> _arr;
+    private static long res;
+    private static long _r;
+
+    // Complete the countTriplets function below.
+    public static long countTriplets(List<long> arr, long r)
+    {
+        _r = r;
+        _arr = arr;
+        // var memo = new Dictionary<>>();
+        var m = new Dictionary<long, List<long>>();
+
+
+        for (int i = 0; i < arr.Count; ++i)
+        {
+            if (!m.ContainsKey(arr[i]))
+            {
+                m[arr[i]] = new List<long>();
+            }
+
+            m[arr[i]].Add(i);
+        }
+        long c=0,x;
+        var n = arr.Count;
+        for (int i = 1; i < n-1; i++)
+        {
+            if (arr[i]%r != 0) continue;
+
+
+            var enumerable = arr.Take(i -1).ToList();
+            Console.WriteLine(enumerable.Count);
+            long less = enumerable.Where(f => f % r == 0).SelectMany(index => m[index]).Count();
+            long high = arr.Skip(i+1).Where(f => f % r == 0).SelectMany(index => m[index]).Count();
+
+
+            c += less * high;
+            
+        }
+
+        return c;
+    }
+
+    /*private static void helper(int index, LinkedList<int> linkedList)
+    {
+        if (linkedList.Count == 3)
+        {
+            var longs = linkedList.ToList();
+            var l = _arr[longs[2]] / _arr[longs[1]];
+            if (l != _r) return;
+            
+            var d = _arr[longs[1]] / _arr[longs[0]];
+            if (l == d )
+            {
+                res++;
+                Console.WriteLine(string.Join(",", longs));
+                
+                
+            }
+        }
+        else
+        {
+            for (int i = index; i < _arr.Count; i++)
+            {
+
+                if (linkedList.Count==0 || linkedList.Count>0 && _arr[i] / _arr[linkedList.Last.Value] == _r)
+                {
+                    linkedList.AddLast(i);
+                    helper(i + 1, linkedList);
+                    linkedList.RemoveLast();
+                }
+                
+            }
+        }
+    }*/
+}
 
 
 public class Solution1
@@ -18,8 +98,69 @@ public class Solution1
     {
         static void Main(string[] args)
         {
-            var res = new SolutionMaxProfit().MaxProfit(new int[]{7,1,5,3,6,4});
+             var res = Solution.countTriplets(new List<long> {1, 3,9, 9, 27, 81}, 3);
+            // Console.WriteLine(res);
+            //var ee = Enumerable.Range(1, 10_000_0).Select(i => (long) i).ToList();
+            //var res = Solution.countTriplets(ee, 15);
             Console.WriteLine(res);
+
+            // var res = Solution.countTriplets(new List<long> {1, 5, 5, 25, 125}, 4);
+
+            /*List<List<int>> queries = new List<List<int>>();
+            @"1 5
+ 1 6
+ 3 2
+ 1 10
+ 1 10
+ 1 6
+ 2 5
+ 3 2".Split('\n').ToList()
+                .ForEach(l => { queries.Add(l.Split(' ').Select(int.Parse).ToList()); });
+ 
+            List<int> ans = freqQuery(queries);*/
+        }
+
+        static List<int> freqQuery(List<List<int>> queries)
+        {
+            var res = new List<int>();
+            var idc = new Dictionary<int, int>();
+            foreach (var query in queries)
+            {
+                switch (query[0])
+                {
+                    case 1:
+                        if (idc.ContainsKey(query[1]))
+                        {
+                            idc[query[1]]++;
+                        }
+                        else
+                        {
+                            idc[query[1]] = 1;
+                        }
+
+                        break;
+                    case 2:
+                        if (idc.ContainsKey(query[1]))
+                        {
+                            idc[query[1]]--;
+                        }
+
+                        break;
+                    default:
+                        if (idc.Values.Any(v => v == query[1]))
+                        {
+                            res.Add(1);
+                        }
+                        else
+                        {
+                            res.Add(0);
+                        }
+
+                        break;
+                }
+            }
+
+            return res;
         }
     }
 }

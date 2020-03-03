@@ -26,6 +26,7 @@
           </e>
         </e>
         <e p="Program.cs" t="Include" />
+        <e p="Resultmojitor.cs" t="Include" />
         <e p="sdf.cs" t="Include" />
         <e p="Solution.cs" t="Include" />
         <e p="Solution2.cs" t="Include" />
@@ -39,6 +40,7 @@
         <e p="SolutionBruteForce.cs" t="Include" />
         <e p="SolutionBuildTree.cs" t="Include" />
         <e p="SolutionCanJump.cs" t="Include" />
+        <e p="SolutionclimbingLeaderboard.cs" t="Include" />
         <e p="SolutionCloneGraph.cs" t="Include" />
         <e p="SolutionCoinChange.cs" t="Include" />
         <e p="SolutionCombinationSum.cs" t="Include" />
@@ -47,6 +49,7 @@
         <e p="SolutionConvertBST.cs" t="Include" />
         <e p="SolutionCopyRandomList.cs" t="Include" />
         <e p="SolutionCountBattleships.cs" t="Include" />
+        <e p="SolutioncountTriplets.cs" t="Include" />
         <e p="SolutionCutOffTree.cs" t="Include" />
         <e p="SolutionDecodeString.cs" t="Include" />
         <e p="SolutionDecodeVariations.cs" t="Include" />
@@ -54,10 +57,14 @@
         <e p="SolutionDietPlanPerformance.cs" t="Include" />
         <e p="SolutionDomino.cs" t="Include" />
         <e p="SolutionDuplicate.cs" t="Include" />
+        <e p="Solutionencode.cs" t="Include" />
         <e p="SolutionExist.cs" t="Include" />
         <e p="SolutionFindBottomLeftValue.cs" t="Include" />
+        <e p="SolutionFindDisappearedNumbers.cs" t="Include" />
+        <e p="SolutionfindDuplicate.cs" t="Include" />
         <e p="SolutionFindMode.cs" t="Include" />
         <e p="SolutionFindTarget.cs" t="Include" />
+        <e p="SolutionFindTargetSumWays.cs" t="Include" />
         <e p="SolutionFindWords.cs" t="Include" />
         <e p="SolutionFirstUniqChar.cs" t="Include" />
         <e p="SolutionFlatten.cs" t="Include" />
@@ -68,6 +75,7 @@
         <e p="SolutionGenerateMatrix.cs" t="Include" />
         <e p="SolutionGenerateParentheses.cs" t="Include" />
         <e p="SolutiongetImportance.cs" t="Include" />
+        <e p="SolutionGetIntersectionNode.cs" t="Include" />
         <e p="SolutionGroupAnagrams.cs" t="Include" />
         <e p="SolutionHasCycle.cs" t="Include" />
         <e p="SolutionHasPathSum.cs" t="Include" />
@@ -97,6 +105,7 @@
         <e p="SolutionLongestUnivaluePath.cs" t="Include" />
         <e p="SolutionLowestCommonAncestor.cs" t="Include" />
         <e p="SolutionMaxDepth.cs" t="Include" />
+        <e p="SolutionMaximalSquare.cs" t="Include" />
         <e p="SolutionMaxProfit.cs" t="Include" />
         <e p="SolutionMaxSubArray.cs" t="Include" />
         <e p="SolutionMerge.cs" t="Include" />
@@ -114,6 +123,8 @@
         <e p="SolutionPartitionLabels.cs" t="Include" />
         <e p="SolutionPathSum.cs" t="Include" />
         <e p="SolutionPermute.cs" t="Include" />
+        <e p="SolutionPermute2.cs" t="Include" />
+        <e p="SolutionProductExceptSelf.cs" t="Include" />
         <e p="SolutionRangeSumBST.cs" t="Include" />
         <e p="SolutionRelativeSortArray.cs" t="Include" />
         <e p="SolutionRemoveNthFromEnd.cs" t="Include" />
@@ -123,11 +134,14 @@
         <e p="SolutionReverseList.cs" t="Include" />
         <e p="SolutionRightSideView.cs" t="Include" />
         <e p="SolutionRob.cs" t="Include" />
+        <e p="SolutionRob2.cs" t="Include" />
         <e p="SolutionRomanToInt.cs" t="Include" />
         <e p="SolutionSearchMatrix.cs" t="Include" />
+        <e p="SolutionSearchRange.cs" t="Include" />
         <e p="SolutionSearchTotatingArray.cs" t="Include" />
         <e p="SolutionShortestDistance.cs" t="Include" />
         <e p="SolutionShortestPathwithAlternatingColors.cs" t="Include" />
+        <e p="SolutionSingleNumber.cs" t="Include" />
         <e p="SolutionSnakesAndLadders.cs" t="Include" />
         <e p="SolutionSolve.cs" t="Include" />
         <e p="SolutionSortColors.cs" t="Include" />
@@ -147,10 +161,12 @@
         <e p="SolutionTrap.cs" t="Include" />
         <e p="SolutiontrimBST.cs" t="Include" />
         <e p="SolutionTwoSum.cs" t="Include" />
+        <e p="SolutionUniquePaths.cs" t="Include" />
         <e p="SolutionUpdateMatrix.cs" t="Include" />
         <e p="SolutionVerticalOrder.cs" t="Include" />
         <e p="SolutionWallsAndGates.cs" t="Include" />
         <e p="SolutionWordBreak.cs" t="Include" />
+        <e p="SolutionWordBreak2.cs" t="Include" />
         <e p="SolutionWordSquares.cs" t="Include" />
         <e p="SolutionZigzagLevelOrder.cs" t="Include" />
         <e p="TicTacToe.cs" t="Include" />

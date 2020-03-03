@@ -1,111 +1,18 @@
 ﻿// ReSharper disable UseIndexFromEndExpression
 
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.ComponentModel.Design;
-using System.Globalization;
-using System.IO;
 using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text.RegularExpressions;
-using ConsoleApp4;
-using Microsoft.VisualBasic;
-
-
-class Solution
-{
-    private static List<long> _arr;
-    private static long res;
-    private static long _r;
-
-    // Complete the countTriplets function below.
-    public static long countTriplets(List<long> arr, long r)
-    {
-        _r = r;
-        _arr = arr;
-        // var memo = new Dictionary<>>();
-        var m = new Dictionary<long, List<long>>();
-
-
-        for (int i = 0; i < arr.Count; ++i)
-        {
-            if (!m.ContainsKey(arr[i]))
-            {
-                m[arr[i]] = new List<long>();
-            }
-
-            m[arr[i]].Add(i);
-        }
-        long c=0,x;
-        var n = arr.Count;
-        for (int i = 1; i < n-1; i++)
-        {
-            if (arr[i]%r != 0) continue;
-
-
-            var enumerable = arr.Take(i -1).ToList();
-            Console.WriteLine(enumerable.Count);
-            long less = enumerable.Where(f => f % r == 0).SelectMany(index => m[index]).Count();
-            long high = arr.Skip(i+1).Where(f => f % r == 0).SelectMany(index => m[index]).Count();
-
-
-            c += less * high;
-            
-        }
-
-        return c;
-    }
-
-    /*private static void helper(int index, LinkedList<int> linkedList)
-    {
-        if (linkedList.Count == 3)
-        {
-            var longs = linkedList.ToList();
-            var l = _arr[longs[2]] / _arr[longs[1]];
-            if (l != _r) return;
-            
-            var d = _arr[longs[1]] / _arr[longs[0]];
-            if (l == d )
-            {
-                res++;
-                Console.WriteLine(string.Join(",", longs));
-                
-                
-            }
-        }
-        else
-        {
-            for (int i = index; i < _arr.Count; i++)
-            {
-
-                if (linkedList.Count==0 || linkedList.Count>0 && _arr[i] / _arr[linkedList.Last.Value] == _r)
-                {
-                    linkedList.AddLast(i);
-                    helper(i + 1, linkedList);
-                    linkedList.RemoveLast();
-                }
-                
-            }
-        }
-    }*/
-}
 
 
 public class Solution1
+
 {
     class Program
     {
         static void Main(string[] args)
         {
-             var res = Solution.countTriplets(new List<long> {1, 3,9, 9, 27, 81}, 3);
-            // Console.WriteLine(res);
-            //var ee = Enumerable.Range(1, 10_000_0).Select(i => (long) i).ToList();
-            //var res = Solution.countTriplets(ee, 15);
-            Console.WriteLine(res);
-
-            // var res = Solution.countTriplets(new List<long> {1, 5, 5, 25, 125}, 4);
-
+            new SolutionMoveZeroes().MoveZeroes(new []{1,0,1});
             /*List<List<int>> queries = new List<List<int>>();
             @"1 5
  1 6
@@ -451,7 +358,7 @@ Console.WriteLine(res);*/
 
 //var res = new SolutionIsSubtree().IsSubtree(treeNode, treeNode2);
 
-/*var res = new SolutionLadderLength().LadderLength("hit", "cog",
+/*var res = new SolutionLadderLength.LadderLength("hit", "cog",
     new List<string>() {"hot", "dot", "dog", "lot", "log", "cog"});
 
 Console.WriteLine(res);*/
